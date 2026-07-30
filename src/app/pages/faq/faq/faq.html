@@ -1,0 +1,113 @@
+<section class="faq-page">
+
+  <!-- Hero -->
+  <section class="faq-hero mt-5">
+
+    <img
+      src="/gallery/WhatsApp Image 2026-07-28 at 6.18.47 AM.jpeg"
+      alt="RIO Perfume"
+      data-aos="zoom-out"
+      data-aos-duration="700">
+
+    <div class="overlay">
+
+      <h1 class="jj"
+          data-aos="fade-down"
+          data-aos-duration="700">
+        Frequently Asked Questions
+      </h1>
+
+      <p
+         data-aos="fade-up"
+         data-aos-duration="700"
+         data-aos-delay="150">
+        Everything you need to know about RIO Perfumes.
+      </p>
+
+    </div>
+
+  </section>
+
+  <div class="container py-5">
+
+    <div class="text-center mb-5"
+         data-aos="fade-up"
+         data-aos-duration="700">
+
+      <span class="small-title">
+        SUPPORT CENTER
+      </span>
+
+      <h2 class="faq-title">
+        How Can We Help You?
+      </h2>
+
+      <p class="faq-subtitle">
+        Find answers to the most common questions from our customers.
+      </p>
+
+    </div>
+
+    @for(item of faqs; track $index){
+
+    <div class="faq-item"
+         data-aos="fade-up"
+         data-aos-duration="700">
+
+      <div class="faq-header"
+           (click)="toggle($index)">
+
+        <h5>{{item.question}}</h5>
+
+        <span>
+          @if(item.open){
+            −
+          }@else{
+            +
+          }
+        </span>
+
+      </div>
+
+      @if(item.open){
+
+      <div class="faq-body">
+
+        <p>
+          {{item.answer}}
+        </p>
+
+      </div>
+
+      }
+
+    </div>
+
+    }
+
+    <div class="contact-box mt-5"
+         data-aos="zoom-in"
+         data-aos-duration="700">
+
+      <h3>
+        Still Need Help?
+      </h3>
+
+      <p>
+        Our team is always ready to answer your questions.
+      </p>
+
+      <a
+        href="https://wa.me/201153393511"
+        target="_blank"
+        class="contact-btn">
+
+        Contact On WhatsApp
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>

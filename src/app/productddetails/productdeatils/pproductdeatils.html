@@ -1,0 +1,106 @@
+<section class="product-details py-5" *ngIf="product">
+
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- Image -->
+      <div class="col-lg-6 mb-4"
+           data-aos="zoom-in-right"
+           data-aos-duration="700">
+
+        <img
+          [src]="product.image"
+          [alt]="product.name"
+          class="img-fluid product-image">
+
+      </div>
+
+      <!-- Details -->
+      <div class="col-lg-6">
+
+        <span class="category"
+              data-aos="fade-left"
+              data-aos-duration="700">
+          {{product.category | titlecase}}
+        </span>
+
+        <h1 class="product-title mt-2"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-delay="100">
+          {{product.name}}
+        </h1>
+
+        <h3 class="price my-4"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-delay="200">
+          {{product.price}} LE
+        </h3>
+
+        <p class="description"
+           data-aos="fade-left"
+           data-aos-duration="700"
+           data-aos-delay="300">
+          {{product.description}}
+        </p>
+
+        <hr
+            data-aos="fade"
+            data-aos-duration="700"
+            data-aos-delay="350">
+
+        <h5
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="400">
+          Fragrance Notes
+        </h5>
+
+        <ul class="notes">
+
+          <li data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="450">
+            ✔ Premium Quality Ingredients
+          </li>
+
+          <li data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="550">
+            ✔ Long Lasting Performance
+          </li>
+
+          <li data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="650">
+            ✔ Perfect For Daily Use
+          </li>
+
+          <li data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="750">
+            ✔ Elegant Luxury Bottle
+          </li>
+
+        </ul>
+
+        <button
+          class="btn btn-dark btn-lg mt-4 px-5"
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          data-aos-delay="850"
+          (click)="buyNow()">
+
+          Buy on WhatsApp
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

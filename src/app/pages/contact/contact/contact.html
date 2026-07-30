@@ -1,0 +1,153 @@
+<section class="contact-page">
+
+  <!-- Hero -->
+  <section class="contact-hero">
+
+    <img
+      src="/gallery/WhatsApp Image 2026-07-28 at 6.18.48 AM.jpeg"
+      alt="RIO Perfume"
+      data-aos="zoom-out"
+      data-aos-duration="700">
+
+    <div class="overlay p-4">
+
+      <span class="hero-subtitle"
+            data-aos="fade-down"
+            data-aos-duration="700">
+        GET IN TOUCH
+      </span>
+
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="100">
+        Contact RIO
+      </h1>
+
+      <p
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="200">
+        Have a question about our perfumes or need help choosing the perfect fragrance?
+        We're always happy to help.
+      </p>
+
+    </div>
+
+  </section>
+
+  <div class="container py-5">
+
+    <div class="row g-4 mb-5">
+
+      <!-- WhatsApp -->
+      <div class="col-lg-4"
+           data-aos="zoom-in-up"
+           data-aos-duration="700"
+           data-aos-delay="100">
+
+        <div class="info-card">
+
+          <i class="bi bi-whatsapp"></i>
+
+          <h4>WhatsApp</h4>
+
+          <p>+201069427041</p>
+
+          <small>Fast response every day.</small>
+
+        </div>
+
+      </div>
+
+      <!-- Email -->
+      <div class="col-lg-4"
+           data-aos="zoom-in-up"
+           data-aos-duration="700"
+           data-aos-delay="250">
+
+        <div class="info-card">
+
+          <i class="bi bi-envelope-fill"></i>
+
+          <h4>Email</h4>
+
+          <p>riostudioegypt@gmail.com</p>
+
+          <small>We'll reply as soon as possible.</small>
+
+        </div>
+
+      </div>
+
+      <!-- Support -->
+      <div class="col-lg-4"
+           data-aos="zoom-in-up"
+           data-aos-duration="700"
+           data-aos-delay="400">
+
+        <div class="info-card">
+
+          <i class="bi bi-headset"></i>
+
+          <h4>Customer Support</h4>
+
+          <p>Available Daily</p>
+
+          <small>06:00 PM - 04:00 AM</small>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form"
+         data-aos="fade-up"
+         data-aos-duration="700">
+
+      <h2>Send Us A Message</h2>
+
+      <p>
+        Fill in the form below and we'll continue the conversation on WhatsApp.
+      </p>
+
+      <div class="row">
+
+        <div class="col-md-6 mb-4">
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+            [(ngModel)]="name">
+
+        </div>
+
+      </div>
+
+      <textarea
+        rows="6"
+        class="form-control mb-4"
+        placeholder="Write your message..."
+        [(ngModel)]="message">
+      </textarea>
+
+      <button
+        class="send-btn"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-delay="150"
+        (click)="sendMessage()">
+
+        <i class="bi bi-whatsapp"></i>
+        Send via WhatsApp
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
